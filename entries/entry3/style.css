@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+}
+
+video {
+  border: 2px solid black; /* Add a border */
+  border-radius: 10px; /* Rounded corners */
+  justify-content: center;
+  align-items: center;
+}

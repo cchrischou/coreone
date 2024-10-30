@@ -1,0 +1,47 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    background-image: url(../entry6/img6/dark.jpeg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat; 
+    height: 100vh; 
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.video-container {
+    width: 100%; /* Full width on smaller screens */
+}
+
+video {
+    width: 400px; /* Make the video responsive */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc; /* Optional border */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Media Query to change background color on smaller screens */
+@media (max-width: 768px) { /* Change this value as needed */
+    body {
+        background-color: white; /* Change background to white */
+        background-image: none; /* Remove background image */
+    }
+
+    video {
+        width: 90%; /* Make video width responsive */
+    }
+}
+

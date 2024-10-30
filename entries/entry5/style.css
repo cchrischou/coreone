@@ -1,0 +1,80 @@
+body {
+  margin: 0; 
+  padding: 0; 
+  background-image: url(../entry5/imgs5/notebook.jpg); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: repeat; 
+  height: 100vh; 
+}
+
+h1 {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6em;
+  color: blue;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+h2 {
+  font-family: Helvetica;
+  font-weight: normal;
+  margin: 20px 0 40px; 
+  font-size: 1.5em;
+  text-align: justify;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.touch {
+  display: flex;
+  flex-direction: column;
+}
+
+.touch img {
+  width: 100%; 
+  height: auto; 
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4em; /* Reduce font size for smaller screens */
+    margin: 30px 0; /* Adjust margin */
+  }
+
+  h2 {
+    font-size: 1.2em; /* Reduce font size for smaller screens */
+    margin: 15px 0 30px; /* Adjust margin */
+  }
+
+  .touch {
+    flex-direction: column; /* Maintain column layout */
+  }
+
+  .touch img {
+    width: 90%; /* Slightly smaller width for images */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3em; 
+    margin: 20px 0; 
+  }
+
+  h2 {
+    font-size: 1em; /* Further reduce font size for mobile */
+    margin: 10px 0 20px; /* Adjust margin */
+  }
+
+  .touch img {
+    width: 100%; /* Full width for images on mobile */
+  }
+}

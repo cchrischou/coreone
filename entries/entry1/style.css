@@ -1,0 +1,24 @@
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(153, 153, 160); /* Button color */
+    text-decoration: none; /* Remove underline */
+    /* border-radius: 5px; Optional: rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.button-link:hover {
+    background-color: rgb(178, 178, 181); /* Darker color on hover */
+}
+
+h4 {
+    font-weight: lighter;
+}
+
+h5 {
+    font-weight: lighter;
+    font-style: italic;
+}
+
