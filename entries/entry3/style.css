@@ -118,3 +118,40 @@ body {
     height: auto; 
     filter: drop-shadow(0 4px 10px white); 
 }
+
+/* NEXT BTN */
+
+.next3 {
+    display: flex; 
+    justify-content: flex-end; 
+    filter: drop-shadow(0 2px 8px white); 
+    position: absolute; 
+    right: 10px; 
+    top: 20px; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    align-items: center;
+}
+
+/* PREV BTN */
+
+.prev3 {
+    display: flex; 
+    justify-content: flex-start; 
+    filter: drop-shadow(0 2px 8px white); 
+    position: absolute; 
+    left: 10px; 
+    top: 20px; 
+    align-items: center;
+}
+
+/* BTN IMG */
+
+.prev3 img, .next3 img {
+    width: 80px; 
+    height: auto; 
+    cursor: pointer; 
+}
