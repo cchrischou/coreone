@@ -1,12 +1,120 @@
 body {
-  display: flex;
-  flex-direction: column;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    background-image: url('../entry3/imgs3/static.gif'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
 }
 
-video {
-  border: 2px solid black; /* Add a border */
-  border-radius: 10px; /* Rounded corners */
-  justify-content: center;
-  align-items: center;
+
+/* IMAGES */
+
+.image-container {
+    /* padding-top: 14em; */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 300px; 
+    height: 300px; 
+    border-radius: 10px; 
+    order: 1;
+    margin: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.image-container:hover {
+    transform: scale(1.1); 
+  }
+
+/* 2022 */
+
+.twentytwo {
+    width: 120%; 
+    height: auto; 
+    filter: drop-shadow(0 4px 10px white); 
+}
+
+.image-containertwo {
+    /* padding-top: 14em; */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 300px; 
+    height: 300px; 
+    border-radius: 10px; 
+    order: 2;
+    margin: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.image-containertwo:hover {
+    transform: scale(1.1); 
+  }
+
+
+/* 2023 */
+
+.twentythree {
+    width: 120%; 
+    height: auto; 
+    filter: drop-shadow(0 4px 10px white); 
+}
+
+.image-containerthree {
+    /* padding-top: 14em; */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 300px; 
+    height: 300px; 
+    border-radius: 10px; 
+    order: 2;
+    margin: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.image-containerthree:hover {
+    transform: scale(1.1); 
+  }
+
+/* GAP */
+
+.gap {
+    padding-bottom: 1em;
+    width: 130%; 
+    height: auto; 
+    filter: drop-shadow(0 4px 10px white); 
+}
+
+/* 2024 */
+
+.image-containerfour {
+    /* padding-top: 14em; */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 300px; 
+    height: 300px; 
+    border-radius: 10px; 
+    order: 3;
+    margin: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.image-containerfour:hover {
+    transform: scale(1.1); 
+  }
+
+.twentyfour {
+    width: 120%; 
+    height: auto; 
+    filter: drop-shadow(0 4px 10px white); 
 }

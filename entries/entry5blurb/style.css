@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'start';
+    src: url('../start.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* h1 {
+    font-family: start;
+    color: white;
+    padding-top: 4em;
+} */
+
+.para2 {
+        font-family: Helvetica;
+        color: white;
+        padding-right: 30em;
+        padding-left: 30em;
+        gap: 0; 
+        justify-content: justify;
+      }
+
+.header2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0; 
+      }
+  
+
+.header2 img {
+    width: 50%; 
+    height: auto; 
+  }
+  

@@ -16,6 +16,8 @@ body {
   font-style: normal;
 }
 
+
+
 h1 {
   font-family: start;
   color: white;
@@ -25,13 +27,14 @@ h1 {
   margin-bottom: 20px; 
 }
 
-/* ------------ */
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body {
   display: flex;
@@ -41,11 +44,10 @@ body {
   height: 100vh;
   margin: 0;
   font-family: 'start';
-  background-color: #5707f1;
+  background-color: black;
   padding: 50px 0;
 }
 
-/* VIDEO */
 .video-container {
   border-radius: 20px;
   padding: 5px;
@@ -61,7 +63,7 @@ video {
   filter: drop-shadow(0 4px 10px black);
 }
 
-/* Home button */
+
 .button-container {
   display: flex;
   justify-content: flex-start; 
@@ -70,6 +72,7 @@ video {
   margin-top: 20px; 
 }
 
+/* Home button */
 .home-btn {
   display: block;
   width: auto; 
@@ -107,11 +110,13 @@ video {
   transform: scale(1.1); 
 }
 
+
 .home-btn img, .pause-btn img {
   cursor: pointer; 
 }
 
 /* BANNER */
+
 .banner-content {
   display: flex;
   white-space: nowrap;
@@ -143,7 +148,9 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #dc01fa;
+  background-color: #0405e7
+
+  ;
   color: 8806f9;
   padding: 20px 0;
   z-index: 1000;
@@ -159,7 +166,9 @@ video {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #dc01fa;
+  background-color: #0405e7
+
+  ;
   color: 8806f9;
   padding: 20px 0;
   z-index: 1000;
