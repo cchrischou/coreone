@@ -41,3 +41,19 @@
     width: 50%; 
     height: auto; 
   }
+
+  .prevb7 {
+    display: flex; 
+    justify-content: flex-start; 
+    filter: drop-shadow(0 2px 8px white); 
+    position: absolute; 
+    left: 10px; 
+    top: 20px; 
+    align-items: center;
+}
+
+.prevb7 img {
+  width: 80px; 
+  height: auto; 
+  cursor: pointer; 
+}
