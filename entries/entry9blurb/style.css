@@ -1,0 +1,96 @@
+/* styles.css */
+@font-face {
+    font-family: 'gill';
+    src: url('../gill.otf') format('opentype');
+}
+
+body {
+    font-family: 'gill';
+    background-color: #8d0908;
+    margin: 0; 
+    padding: 0; 
+    position: fixed;
+    min-height: 100vh; 
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    min-height: calc(100vh - 120px);
+    padding-top: 80px; 
+    padding-bottom: 80px; 
+}
+
+.h1 {
+    font-size: 2em; 
+    text-align: justify; 
+    color: white;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+/* Top Banner */
+.top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: #8d0908;
+    padding: 20px 0;
+    z-index: 1000;
+    font-size: 40px;
+}
+
+.top-banner .banner-content {
+    animation: scroll-text 10s linear infinite;
+}
+
+/* Bottom Banner */
+.bottom-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: #8d0908;
+    padding: 20px 0;
+    z-index: 1000;
+    font-size: 40px;
+}
+
+.bottom-banner .banner-content {
+    animation: scroll-text 10s linear infinite reverse;
+}
+
+/* Scroll animation for banners */
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Brownie Button (Image) */
+.brownie {
+    position: fixed;
+    padding-top: 3em;
+    top: 80px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1001; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.brownie img {
+    width: 200px; 
+    height: auto;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
+}
