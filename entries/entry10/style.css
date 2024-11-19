@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'start'; 
+    src: url('../start.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: start;
+    margin: 0;
+    height: 100vh; 
+    width: 100vw; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.button {
+    padding: 20px 50px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    transition: all 100ms;
+    cursor: pointer;
+    position: relative; 
+    z-index: 10;
+}
+
+.button:hover {
+    background-color: rgb(28, 0, 214);
+}
+
+.text {
+    font-family: start;
+    color: black;
+    position: absolute; 
+    font-size: 3rem;
+    opacity: 1; 
+}
+
