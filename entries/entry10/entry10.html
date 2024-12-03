@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Eoneo</title>
- 
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>memorylane</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="../favicon.png" type="image/png">
 </head>
+
+
 <body>
-    
-<section>
-    <section>
-        <div class="button" id="clickMeButton">memories</div>
-    </section>
-    <script src="main.js"></script>
-  
 
 
+   <div class="main-container">
+       <div class="gallery-container">
+           <div class="gallery">
+               <div class="gallery-item" onclick="showImage(1)">
+                   <img src="imgs10/labo.png" alt="Image 1">
+               </div>
+               <div class="gallery-item" onclick="showImage(2)">
+                   <img src="imgs10/smiski.png" alt="Image 2">
+               </div>
+               <div class="gallery-item" onclick="showImage(3)">
+                   <img src="imgs10/smoothie.png" alt="Image 3">
+               </div>
+               <div class="gallery-item" onclick="showImage(4)">
+                   <img src="imgs10/flower.png" alt="Image 4">
+               </div>
+               <div class="gallery-item" onclick="showImage(5)">
+                   <img src="imgs10/soup.png" alt="Image 5">
+               </div>
+           </div>
+       </div>
+
+
+       <div class="image-display" id="imageDisplay">
+           <img id="fullImage" src="" alt="Full size image">
+           <p id="imageDescription"></p>
+       </div>
+   </div>
+
+   <div class="button-container">
+    <!-- Prev Button on Left -->
+    <a href="http://127.0.0.1:5500/coreone/new/entries/entry9/entry9.html" class="text-button-link">
+        <h2 class="text-button prev-button">PREV</h2>
+    </a>
+
+    <!-- Go Next Button on Right -->
+    <a href="http://127.0.0.1:5500/coreone/new/entries/entry11/entry11.html" class="text-button-link">
+        <h2 class="text-button next-button">GO NEXT</h2>
+    </a>
+  </div>
 </div>
+
+
+   <script src="main.js"></script>
+   
 </body>
+
+
 </html>
 

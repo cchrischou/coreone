@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('/favicon.png') 32 32, auto;  
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('../entry1/imgs1/random.gif');
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden;
+    
+    position: relative; 
+
+    cursor: url('/favicon.png') 32 32, auto;
+}
+
+body::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; 
+    
+    border: 20px solid transparent; 
+    border-image: url('../entry1/imgs1/border.png') 30 fill; 
+    z-index: 9999; 
+}
+
+@font-face {
+    font-family: 'start';
+    src: url('../start.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: start;
+    font-size: 5em;
+    color: white;
+    text-shadow: 3px 3px 6px white;
+    text-align: center;
+    margin: 0; 
+    z-index: 10000;
+}
+
+.content-container {
+    text-align: center; 
+}
+
+.text-button-link {
+    text-decoration: none; 
+}
+
+.text-button {
+    font-family: start;
+    font-size: 2em; 
+    color: white; 
+    cursor: pointer; 
+    padding: 10px 20px; 
+    text-shadow: 2px 2px 5px white; 
+    transition: all 0.3s ease; 
+    background: transparent; 
+    display: inline-block; 
+    margin-top: 20px; 
+    position: relative; 
+}
+
+.text-button::before {
+    content: '>'; 
+    font-size: 1.5em; 
+    color: white; 
+    margin-right: 10px; 
+    animation: blink 1s infinite; 
+    position: absolute;
+    left: -40px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.text-button:hover {
+    color: white;
+    text-decoration: underline; 
+}
+
+.text-button:active {
+    color: white; 
+    transform: translateY(2px); 
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+

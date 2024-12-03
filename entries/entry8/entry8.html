@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Eoneo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>memorylane</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../favicon.png" type="image/png">
 </head>
 <body>
-
-    <div class="shadow-inset-center"><span>ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR!
-        <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR!
-        <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! 
-        <br> ERROR! <br> ERROR!<br> ERROR! <br> ERROR! <br> ERROR!<br> ERROR! <br> ERROR! <br> ERROR!
-        <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR!
-        <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR!
-        <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR!
-        <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR!
-        <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR!
-        <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR! <br> ERROR!
-    </span></div>
-
-
-    <button class="game">
-        <a href="https://trex-runner.com/">
-            PLAY!
-        </a>
-    </button>
-
-
-    <a href="../entry3/entry3.html" class="home8-btn">
-        <img src="../entry8/img8/home8.png" alt="Home">
-    </a>
-
-    <a href="../entry9/entry9.html" class="next8-btn">
-        <img src="../entry8/img8/next8.png" alt="Next">
-    </a>
-
+  <div class="container">
     
+    <!-- game section -->
+    <div class="game-container">
+      <h1>MEMORY GAME</h1>
+      <div class="board" id="board"></div>
+      <button id="resetBtn" class="reset-btn">Restart Game</button>
+    </div>
 
+    <!-- go next and prev button section (left & right) -->
+    <div class="button-container">
+      <!-- Prev Button on Left -->
+      <a href="http://127.0.0.1:5500/coreone/new/entries/entry3/entry3.html" class="text-button-link">
+          <h2 class="text-button prev-button">PREV</h2>
+      </a>
+
+      <!-- Go next button on right -->
+      <a href="http://127.0.0.1:5500/coreone/new/entries/entry9/entry9.html" class="text-button-link">
+          <h2 class="text-button next-button">GO NEXT</h2>
+      </a>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>

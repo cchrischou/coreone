@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #2600fe;
   flex-direction: column;
 }
 
@@ -47,7 +47,7 @@ body {
 }
 
 /* HIDDEN */
-.page:not(:nth-child(1)) {
+/* .page:not(:nth-child(1)) {
   transform: rotateY(90deg);
 }
 
@@ -64,4 +64,6 @@ button {
 
 button:hover {
   background-color: #555;
-}
+} */ 
+
+

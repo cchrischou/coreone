@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'start';
+  src: url('../start.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background-color:  blue;
+    color:  white;
+    font-family: start;
+  }
+  
+  h1 {
+    font-family: start;
+  }
+
+.red {
+    background-color: red;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'start';
+    background-color: transparent;  
+ }
+ 
+ body {
+   background-image: url('../entry1/imgs1/random.gif');
+   background-position: center;
+   background-size: cover; 
+   background-repeat: no-repeat;
+   background-attachment: fixed; 
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   overflow: hidden;
+   position: relative; 
+ }
+ 
+ body::before {
+   content: "";
+   position: absolute; 
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   pointer-events: none; 
+   border: 20px solid transparent; 
+   border-image: url('../entry1/imgs1/border.png') 30 fill; 
+   z-index: 9999; 
+   background-color: transparent;  
+ }
+
+ .button-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;  
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  padding: 0 20px;  
+}
+
+.text-button {
+  font-family: start;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-shadow: 2px 2px 5px white;
+  transition: all 0.3s ease;
+  background: transparent;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.text-button::before {
+  content: '>';
+  font-size: 1.5em;
+  color: white;
+  margin-right: 10px;
+  animation: blink 1s infinite;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev-button {
+  position: absolute;
+  left: 200px;  
+}
+
+.next-button {
+  position: absolute;
+  right: 100px;  
+}
+
+.text-button:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.text-button:active {
+  color: black;
+  transform: translateY(2px);
+}
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+ 
+
+  
