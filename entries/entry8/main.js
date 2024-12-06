@@ -2,10 +2,10 @@ let board = document.getElementById('board');
 let resetBtn = document.getElementById('resetBtn');
 
 let cards = [];
+let shuffledCards = [];  
 let flippedCards = [];
 let matchedCards = 0;
 let totalCards = 0;
-
 
 fetch('cards.json')
   .then(response => {
@@ -17,24 +17,21 @@ fetch('cards.json')
   .then(data => {
     cards = data.cards;
     totalCards = cards.length * 2;
-    startGame();  
+    startGame();
   })
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
   });
 
-
-  function startGame() {
- 
+function startGame() {
   matchedCards = 0;
   flippedCards = [];
 
-
   clearBoard();
-  shuffleCards();
+  shuffleCards();  
 
 
-  cards.forEach((card, index) => {
+  shuffledCards.forEach((card, index) => {
     const cardElement = createCardElement(card, index);
     board.appendChild(cardElement);
   });
@@ -45,9 +42,9 @@ function clearBoard() {
 }
 
 function shuffleCards() {
-  const shuffledCards = [...cards, ...cards];  
+
+  shuffledCards = [...cards, ...cards];  
   shuffledCards.sort(() => Math.random() - 0.5);  
-  cards = shuffledCards; 
 }
 
 function createCardElement(card, index) {
@@ -57,7 +54,7 @@ function createCardElement(card, index) {
 
   cardElement.innerHTML = `
     <div class="front">
-      <span>?</span>  <!-- You can replace this with a symbol or number, like ? or something else -->
+      <span>?</span> <!-- You can replace this with a symbol or number -->
     </div>
     <div class="back">
       <img src="${card.image}" alt="Card Back">
@@ -68,8 +65,6 @@ function createCardElement(card, index) {
 
   return cardElement;
 }
-
-
 
 function flipCard(cardElement) {
   if (flippedCards.length === 2 || cardElement.classList.contains('flipped')) {
@@ -84,8 +79,6 @@ function flipCard(cardElement) {
   }
 }
 
-
-
 function checkMatch() {
   const [firstCard, secondCard] = flippedCards;
   const firstCardImage = firstCard.querySelector('.back img').src;
@@ -94,7 +87,7 @@ function checkMatch() {
   if (firstCardImage === secondCardImage) {
     matchedCards++;
     flippedCards = [];
-    if (matchedCards === cards.length / 2) {  
+    if (matchedCards === cards.length) {  
       alert('You Win! Congratulations!');
     }
   } else {
@@ -106,7 +99,4 @@ function checkMatch() {
   }
 }
 
-
-
 resetBtn.addEventListener('click', startGame);
-

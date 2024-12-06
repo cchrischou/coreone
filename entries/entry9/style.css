@@ -1,164 +1,154 @@
 @font-face {
-    font-family: 'start';
-    src: url('../start.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'start';
+  src: url('../start.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  body {
-    background-image: url('../entry1/imgs1/random.gif');
-    background-position: center;
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-  
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    overflow: hidden;
-    
-    position: relative; 
-  }
-  
-  body::before {
-    content: "";
-    position: absolute; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none; 
-    
-    border: 20px solid transparent; 
-    border-image: url('../entry1/imgs1/border.png') 30 fill; 
-    z-index: 9999; 
-  }
-  
-  .main-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;
-    gap: 30px; 
-    padding: 15px;
-    max-width: 90%;
-    max-height: 90%;
-    overflow: auto;
-    position: relative; 
-  }
-  
-  .floating-container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    gap: 20px; 
-    perspective: 800px; 
-    flex-wrap: wrap; 
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  
-  .floating-image {
-    width: 150px; 
-    height: auto;
-    position: relative;
-    transform-style: preserve-3d;
-    animation: floatBounce 4s infinite, rotateHorizontal 6s infinite linear;
-    
-    box-shadow: 0 10px 30px white, 0 0 15px white;
-    filter: brightness(0.9); 
-    
-  }
-  
-  @keyframes floatBounce {
-    0% { transform: translateY(0) rotateY(0) scale(1) translateZ(0); }
-    25% { transform: translateY(-20px) rotateY(20deg) scale(1.05) translateZ(10px); }
-    50% { transform: translateY(0) rotateY(0) scale(1) translateZ(0); }
-    75% { transform: translateY(20px) rotateY(-20deg) scale(0.95) translateZ(-10px); }
-    100% { transform: translateY(0) rotateY(0) scale(1) translateZ(0); }
-  }
-  
-  @keyframes rotateHorizontal {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
-  }
-  
-  .button-container {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;  
-    width: 100%;
-    display: flex;
-    justify-content: space-between;  
-    padding: 0 20px;  
-  }
-  
-  .text-button {
-    font-family: start;
-    font-size: 2em;
-    color: white;
-    cursor: pointer;
-    padding: 10px 20px;
-    text-shadow: 2px 2px 5px white;
-    transition: all 0.3s ease;
-    background: transparent;
-    display: inline-block;
-    margin-top: 20px;
-  }
-  
-  .text-button::before {
-    content: '>';
-    font-size: 1.5em;
-    color: white;
-    margin-right: 10px;
-    animation: blink 1s infinite;
-    position: absolute;
-    left: -40px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .prev-button {
-    position: absolute;
-    left: 200px;  
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .next-button {
-    position: absolute;
-    right: 100px; 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url('../entry1/imgs1/random.gif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+
+  border: 20px solid transparent;
+  border-image: url('../entry1/imgs1/border.png') 30 fill;
+  z-index: 9999;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  position: relative;
+}
+
+.floating-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  gap: 20px; 
+  perspective: 800px; 
+  flex-wrap: wrap;  
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.floating-image {
+  width: 150px;
+  height: auto;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: floatBounce 4s infinite, rotateHorizontal 6s infinite linear;
+  
+  box-shadow: 0 10px 30px white, 0 0 15px white;
+  filter: brightness(0.9);
+}
+
+@keyframes floatBounce {
+  0% { transform: translateY(0) rotateY(0) scale(1) translateZ(0); }
+  25% { transform: translateY(-20px) rotateY(20deg) scale(1.05) translateZ(10px); }
+  50% { transform: translateY(0) rotateY(0) scale(1) translateZ(0); }
+  75% { transform: translateY(20px) rotateY(-20deg) scale(0.95) translateZ(-10px); }
+  100% { transform: translateY(0) rotateY(0) scale(1) translateZ(0); }
+}
+
+@keyframes rotateHorizontal {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+.content-container {
+  text-align: center;
+}
+
+.text-button-link {
+  text-decoration: none;
+}
+
+.text-button {
+  font-family: start;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-shadow: 2px 2px 5px white;
+  transition: all 0.3s ease;
+  background: transparent;
+  display: inline-block;
+  position: relative;
+}
+
+.text-button::before {
+  content: '>';
+  font-size: 1.5em;
+  color: white;
+  margin-right: 10px;
+  animation: blink 1s infinite;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-button:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.text-button:active {
+  color: black;
+  transform: translateY(2px);
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
   }
-  
-  .text-button:hover {
-    color: black;
-    text-decoration: underline;
+  50% {
+    opacity: 0;
   }
-  
-  .text-button:active {
-    color: black;
-    transform: translateY(2px);
-  }
-  
-  @keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-  }
-  
-  
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;  
+  gap: 20px;  
+  align-items: center; 
+  justify-content: center;
+}
